@@ -6,7 +6,7 @@ import router from "./router";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjZ0kdwVM4k5y7qcam7-6DqLHmNJqnU54",
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
   authDomain: "vue-site-7edf1.firebaseapp.com",
   projectId: "vue-site-7edf1",
   storageBucket: "vue-site-7edf1.appspot.com",
