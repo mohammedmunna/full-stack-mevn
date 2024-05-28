@@ -7,6 +7,8 @@ This project is a full-stack web application built using the MEVN stack. The fol
 - Node.js
 - Firebase
 
+[![My Skills](https://skillicons.dev/icons?i=mongodb,express,vue,nodejs,firebase)](https://skillicons.dev)
+
 ## Installation
 
 ### Prerequisites
