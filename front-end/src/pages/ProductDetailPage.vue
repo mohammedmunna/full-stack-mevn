@@ -36,6 +36,14 @@ import {
 import axios from "axios";
 import NotFoundPage from "./NotFoundPage.vue";
 
+const getDeploymentUrl = () => {
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:8080";
+  }
+  // for deploment at Render
+  return "https://full-stack-mevn.onrender.com";
+};
+
 export default {
   name: "ProductDetailPage",
   components: { NotFoundPage },
@@ -74,7 +82,7 @@ export default {
       const email = prompt("Please enter your email to sign in:");
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `http://localhost:8080/products/${this.$route.params.productId}`,
+        url: `${getDeploymentUrl()}/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       };
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);

@@ -5,8 +5,6 @@ import "dotenv/config";
 
 async function start() {
   // connection to MongoDB
-  console.log("ENV:", process.env.DB_USER);
-  console.log("ENV:", process.env.DB_PASS);
   const mongodbUrl = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster-full-stack-vue.gntgnym.mongodb.net/?retryWrites=true&w=majority&appName=cluster-full-stack-vue`;
   const client = new MongoClient(mongodbUrl);
 
