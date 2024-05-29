@@ -51,10 +51,14 @@ Ensure you have the following installed:
     cd ../front-end
     npm install
     ```
+2. Create a `.env` file in the `front-end` directory and add your firebase apiKey and other environment variables:
+    ```
+    VUE_APP_FIREBASE_API_KEY=yourFirebaseApikey
+    ```
 
-2. Start the frontend development server:
+3. Start the frontend development server:
     ```bash
     npm run serve
     ```
 
-3. Open your browser and go to `http://localhost:8080`.
+4. Open your browser and go to `http://localhost:8080`.
